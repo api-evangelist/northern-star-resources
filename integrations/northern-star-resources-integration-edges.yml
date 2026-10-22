@@ -1,0 +1,19 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/northern-star-resources/integrations
+- https://n8n.io/integrations/northern-star-resources/
+- https://composio.dev/toolkits/northern-star-resources
+- https://monid.ai/tools/northern-star-resources
+checked:
+- https://zapier.com/apps/northern-star-resources/integrations
+- https://www.nsrltd.com/
+- https://composio.dev/toolkits/northern-star-resources
+- https://monid.ai/tools/northern-star-resources
+- https://n8n.io/integrations/northern-star-resources/
+summary: Checked, nothing found. Northern Star Resources is an ASX-listed gold producer with no API, developer program
+  or integrations/partners page on nsrltd.com. It has no Zapier app listing (404), and the dossier found no contract
+  on its hosts.
+marketplace_apps: []
+edges: []
+templates: []

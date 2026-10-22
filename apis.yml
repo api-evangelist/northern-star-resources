@@ -1,23 +1,91 @@
 aid: northern-star-resources
+
 name: Northern Star Resources
-description: 'Northern Star Resources is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Northern Star Resources Limited (ASX: NST) is an Australian gold producer with operating mines and
+  exploration programs in Western Australia and Alaska, including the Kalgoorlie (KCGM), Jundee, Carosue Dam, Thunderbox,
+  Bronzewing and Pogo operations and the Hemi development project. Its website at nsrltd.com publishes investor,
+  ASX announcement, sustainability and careers information; no public API or developer program was found on its
+  site. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/northern-star-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Australia
+- Natural Resources
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.nsrltd.com/dist/assets/images/favicon/apple-touch-icon.png
+
 common:
+- type: WellKnown
+  url: well-known/northern-star-resources-well-known.yml
+- type: Hosts
+  url: hosts/northern-star-resources-hosts.yml
+- type: Vendors
+  url: vendors/northern-star-resources-vendors.yml
+- type: DomainSecurity
+  url: security/northern-star-resources-domain-security.yml
 - type: Website
-  url: https://nsrltd.com/
+  url: https://www.nsrltd.com/
+- type: Support
+  url: https://www.nsrltd.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.nsrltd.com/privacy-policy/
+- type: Newsroom
+  url: https://www.nsrltd.com/investors/asx-announcements/
+- type: Investors
+  url: https://www.nsrltd.com/investors/
+- type: Careers
+  url: https://careers.nsrltd.com/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/northern-star-resources-limited
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: 'Website https://www.nsrltd.com/ titled "Home | Northern Star", meta description names Northern Star (ASX:
+    NST) gold producer; no API, developer portal, docs or terms page linked from the site.'
+  evidence:
+  - url: https://www.nsrltd.com/
+    status: 200
+  - url: https://www.nsrltd.com/privacy-policy/
+    status: 200
+  - url: https://www.nsrltd.com/contact-us/
+    status: 200
+  - url: https://www.nsrltd.com/investors/asx-announcements/
+    status: 200
+  - url: https://careers.nsrltd.com/
+    status: 200
+  - url: https://au.linkedin.com/company/northern-star-resources-limited
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

@@ -1,0 +1,20 @@
+generated: '2026-10-22'
+method: none
+status: none
+note: >-
+  Checked, nothing there. Northern Star Resources (ASX: NST) publishes no API, OpenAPI contract or MCP
+  server. Pre-flight contract discovery on nsrltd.com, www.nsrltd.com, careers.nsrltd.com and api.nsrltd.com
+  found no MCP endpoint. GET https://www.nsrltd.com/.well-known/mcp.json and
+  https://nsrltd.com/.well-known/mcp/server-card.json both returned 404 (2026-10-22). A web search for a
+  Northern Star Resources MCP server returned only unrelated products. With no OpenAPI, there are no
+  operations to derive a candidate tool list from.
+checked:
+- url: https://www.nsrltd.com/.well-known/mcp.json
+  status: 404
+- url: https://nsrltd.com/.well-known/mcp/server-card.json
+  status: 404
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

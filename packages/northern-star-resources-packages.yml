@@ -1,0 +1,13 @@
+generated: '2026-10-22'
+method: none
+name: Northern Star Resources packages
+note: >-
+  Checked, nothing found. Northern Star Resources (nsrltd.com) publishes no developer docs, SDK or CLI. Registry
+  probes for the name returned 404 (registry.npmjs.org/northern-star-resources, pypi.org/pypi/northern-star-resources/json),
+  and a web search found only unrelated "Northstar" packages.
+checked:
+- url: https://registry.npmjs.org/northern-star-resources
+  status: 404
+- url: https://pypi.org/pypi/northern-star-resources/json
+  status: 404
+packages: []

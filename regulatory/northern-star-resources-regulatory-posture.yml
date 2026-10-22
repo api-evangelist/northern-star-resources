@@ -1,0 +1,75 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.nsrltd.com/privacy-policy/
+notes: >-
+  Northern Star Resources (ASX: NST) publishes one legal page, its website Privacy Policy, written under the
+  Australian Privacy Act and Australian Privacy Principles (APPs). It is linked from the homepage footer
+  (https://www.nsrltd.com/, 200). No terms of service, subprocessor list, trust centre, accessibility
+  statement or AI statement was linked from the site. Only signals the policy speaks to are recorded.
+signals:
+  data_subject_request:
+    url: https://www.nsrltd.com/privacy-policy/
+    section: Access to information
+    rights_named: [access, correction]
+    channel: info@nsrltd.com (per "Opting out" / "Contact us" sections)
+    evidence:
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Company will, when appropriate, provide access to personal information. The Company will correct any
+        inaccurate, outdated, incomplete, irrelevant and/or misleading personal information held at the request of
+        the relevant individual.
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You can contact the Company regarding any access requests, concerns that you may have about this Policy, or
+        to make a complaint about a breach of privacy.
+    note: >-
+      Access and correction rights (APP 12/13) are stated, qualified ("when appropriate") with listed refusal
+      grounds and identity verification. No deletion or portability right and no response SLA is stated.
+  data_retention:
+    url: https://www.nsrltd.com/privacy-policy/
+    section: Storage and security
+    evidence:
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        securely destroy personal information where it is no longer required and isn’t required to be held by law.
+    note: >-
+      A principle-level retention commitment (destroy when no longer needed and not legally required); no
+      retention periods are published.
+  data_residency:
+    url: https://www.nsrltd.com/privacy-policy/
+    section: Overseas disclosure
+    evidence:
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        As the Company operates in multiple locations including the United States, it may disclose personal
+        information both in Australia and overseas for the purpose of conducting its business.
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        only transfer personal information to foreign countries after taking such steps as are reasonable in the
+        circumstances to ensure that the overseas recipient does not breach applicable law
+    note: >-
+      Establishes that data may leave Australia (notably to the United States); no residency commitment, only
+      an APP 8-style cross-border transfer safeguard.
+  subprocessors:
+    url: https://www.nsrltd.com/privacy-policy/
+    section: Disclosure of personal information
+    categories: [information technology service providers, mailing houses, market research organisations, specialist consultants]
+    evidence:
+    - source: https://www.nsrltd.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        other third party service providers which may or may not be based in Australia and the United States of
+        America, who assist us to provide the Website or any services in connection with it
+    note: >-
+      Third-party recipients are disclosed by category and location only; no named subprocessor list is published.
